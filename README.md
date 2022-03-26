@@ -7,3 +7,4 @@
 - [FontAwesome Icons](https://fontawesome.com/icons?d=gallery&q=close&m=free)
 - [W3Schools - Audio Element](https://www.w3schools.com/tags/ref_av_dom.asp)
 -[Mozilla - Ternary Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+- [Mozilla - Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
