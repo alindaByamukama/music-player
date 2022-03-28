@@ -29,7 +29,7 @@ const songs = [
     },
     {
         name: 'metric-1',
-        displayName: 'Front Row (Remix',
+        displayName: 'Front Row (Remix)',
         artist: 'Metric/Jacinto Design'
     }
 ]
@@ -101,14 +101,26 @@ function updateProgressBar(e) {
         progress.style.width = `${progressPercent}%`
         // calculate display for the duration
         const durationMinutes = Math.floor(duration / 60)
+            // console.log('minutes', durationMinutes)
         let durationSeconds = Math.floor(duration % 60)
         if (durationSeconds < 10) {
             durationSeconds = `0${durationSeconds}`
         }
+            // console.log('seconds', durationseconds)
         // delay switching duration element to avoid NaN
         if (durationSeconds) {
             durationEl.textContent = `${durationMinutes}:${durationSeconds}`
         }
+        // calculate display for the current
+        const currentMinutes = Math.floor(currentTime / 60)
+            // console.log('minutes', currentMinutes)
+        let currentSeconds = Math.floor(currentTime % 60)
+        if (currentSeconds < 10) {
+            currentSeconds = `0${currentSeconds}`
+        }
+            // console.log('minutes', currentSeconds)
+        currentTimeEl.textContent = `${currentMinutes}:${currentSeconds}`
+
     }
 }
 
